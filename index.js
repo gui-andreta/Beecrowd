@@ -25,7 +25,7 @@ class PlanoCartesiano{
         } else if (x === 0 && (y > 0 || y < 0)) {
             return console.log("Eixo X");
         } else if ((x > 0 || x < 0) && y === 0) {
-            return console.log("Eixo X");
+            return console.log("Eixo Y");
         }
     }
 }
