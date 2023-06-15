@@ -23,7 +23,12 @@ if (entrada <= 0) {
             var inicio = intervalo[i];
         } else if (entrada <= intervalo[i]) {
             var final = intervalo[i];
-            console.log("Intervalo [%d,%d]", inicio, final);
+
+            if (inicio === 25 || inicio === 75) {
+                console.log("Intervalo (%d,%d]", inicio, final);
+            } else if (inicio === 0 || inicio === 50) {
+                console.log("Intervalo [%d,%d]", inicio, final);
+            }
             break;
         }
     }
