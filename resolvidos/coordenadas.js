@@ -5,13 +5,13 @@ var input = fs.readFileSync("stdin", "utf-8");
 var valores = input.split(" ");
 
 //Classe e metodos do plano cartesiano
-class PlanoCartesiano{
+class PlanoCartesiano {
     constructor(x, y) {
         this.x = x;
         this.y = y;
     }
 
-    areaPlano(x, y){
+    areaPlano(x, y) {
         if (x === 0 && y === 0) {
             return console.log("Origem");
         } else if (x > 0 && y > 0) {
@@ -32,10 +32,10 @@ class PlanoCartesiano{
 
 // Recebendo as coordenadas
 var coords = [];
-for(let i = 0; i < 2; i++) {
-    coords.push(parseFloat(valores.shift()))
+for (let i = 0; i < 2; i++) {
+    coords.push(parseFloat(valores.shift()));
 }
 
-var plan = new PlanoCartesiano(coords[0], coords[1])
+var plan = new PlanoCartesiano(coords[0], coords[1]);
 
 plan.areaPlano(coords[0], coords[1]);
