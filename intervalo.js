@@ -10,16 +10,21 @@ var entrada = parseFloat(valores.shift());
 // Variaveis para geração de intervalos
 const intervalo = [0, 25, 50, 75, 100];
 
-for (let i = 0; i < intervalo.length; i++) {
-    if (entrada > 100) {
-        console.log("Fora de intervalo");
-        break;
-    } else if (entrada > intervalo[i]) {
-        var inicio = intervalo[i];
-    } else if (entrada <= intervalo[i]) {
-        var final = intervalo[i];
+if (entrada <= 0) {
+    console.log("Fora de intervalo");
+} else {
+    for (let i = 0; i < intervalo.length; i++) {
+        if (entrada > 100) {
+            console.log("Fora de intervalo");
+            break;
+        }
 
-        console.log("Intervalo [%d,%d]", inicio, final);
-        break;
+        if (entrada > intervalo[i]) {
+            var inicio = intervalo[i];
+        } else if (entrada <= intervalo[i]) {
+            var final = intervalo[i];
+            console.log("Intervalo [%d,%d]", inicio, final);
+            break;
+        }
     }
 }
