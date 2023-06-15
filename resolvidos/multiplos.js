@@ -12,9 +12,9 @@ for (let i = 0; i < 2; i++) {
 }
 
 // Fazendo lógica para conferir qual numero é maior e gerando o quaciente
-if(numeros[0] >= numeros[1]) {
+if (numeros[0] >= numeros[1]) {
     var div = numeros[0] % numeros[1];
-}else if(numeros[0] < numeros[1]) {
+} else if (numeros[0] < numeros[1]) {
     var div = numeros[1] % numeros[0];
 }
 
