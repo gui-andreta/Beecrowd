@@ -23,9 +23,9 @@ class PlanoCartesiano{
         } else if (x > 0 && y < 0) {
             return console.log("Q4");
         } else if (x === 0 && (y > 0 || y < 0)) {
-            return console.log("Eixo X");
-        } else if ((x > 0 || x < 0) && y === 0) {
             return console.log("Eixo Y");
+        } else if ((x > 0 || x < 0) && y === 0) {
+            return console.log("Eixo X");
         }
     }
 }
